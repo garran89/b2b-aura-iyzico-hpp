@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Payment Method">
+        <template if:true={isError}>
+            <h3>Something went wrong! Please try again!</h3>
+        </template>
+        <lightning-button label="Pay with Iyzico" variant="brand" onclick={onClickHandler}></lightning-button>
+    </lightning-card>
+</template>
