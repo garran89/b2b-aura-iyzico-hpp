@@ -1,18 +1,13 @@
-# Salesforce DX Project: Next Steps
+## Iyzico HPP Integration with Salesforce B2B(Aura)
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This repository supplements the [commerce on core blog post](http://localhost:4000/b2b-aura-payment-integration/).
 
-## How Do You Plan to Deploy Your Changes?
+## Configuration Steps
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+1. Create a free sandbox [here](https://sandbox-merchant.iyzipay.com/auth/register)
+2. After creating the account, generate new client_id(api key) and client_secret. 
+3. Configure the client_id(api key) and client_secret in [IyzicoUtils](https://github.com/garran89/b2b-aura-iyzico-hpp/blob/main/force-app/main/default/classes/IyzicoUtils.cls) class.
+4. Deploy the code to the salesforce org.
+5. Follow the [blog post](http://localhost:4000/b2b-aura-payment-integration/#registering-a-payment-gateway-providerpgp) to register a new payment gateway provider.
+4. Use [test card](https://dev.iyzipay.com/en/api/auth#testcards) details to create an order.
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
